@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #7BC043;
+  --color-brand-primary-hover: #6ab035;
+  --color-brand-secondary: #2E7D32;
+  --color-brand-accent: #FF6B00;
+  --color-brand-accent-hover: #e55e00;
+  --color-brand-bg: #FFFFFF;
+  --color-brand-text: #333333;
+  --font-sans: 'Outfit', sans-serif;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet-active {
+  background: #7BC043 !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7BC043 !important;
+}
